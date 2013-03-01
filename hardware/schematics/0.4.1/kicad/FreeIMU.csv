@@ -1,0 +1,14 @@
+"Id";"Designator";"Package";"Quantity";"Designation";"Supplier and ref";
+1;"P101";"CONN_8_100MIL_OVAL";1;"CONN_8";;;
+2;"U401";"HMC5883L";1;"HMC5883";;;
+3;"SW301,SW201";"JUMP_2_WITH_PASTE_2";2;"SOLDER_SWITCH";;;
+4;"U301";"MPU60X0";1;"MPU60X0";;;
+5;"C502";"SM0805";1;"1uF";;;
+6;"C403";"SM0805";1;"4.7uF";;;
+7;"C402";"SM0805";1;"0.22uF";;;
+8;"C303,C301";"SM0805";2;"10nF";;;
+9;"SW101";"SOLDER_JUMPER";1;"SPST";;;
+10;"U501";"SOT23-5";1;"MIC5203";;;
+11;"C201,C302,C304,C401,C501";"c_0402";5;"0.1uF";;;
+12;"R101,R102";"c_0402";2;"2.2K";;;
+13;"U201";"MS5611-01BA01";1;"MS5611-01BA01";;;

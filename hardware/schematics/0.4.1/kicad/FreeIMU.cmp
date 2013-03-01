@@ -1,0 +1,143 @@
+Cmp-Mod V01 Created by CvPcb (2011-09-27 BZR 3151)-stable date = Fri 30 Sep 2011 12:06:21 PM CEST
+
+BeginCmp
+TimeStamp = /4D970D8E/4D971B66;
+Reference = C201;
+ValeurCmp = 0.1uF;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4D9707AF/4D374544;
+Reference = C301;
+ValeurCmp = 10nF;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4D9707AF/4D374246;
+Reference = C302;
+ValeurCmp = 0.1uF;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4D9707AF/4D373888;
+Reference = C303;
+ValeurCmp = 10nF;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4D9707AF/4D37435E;
+Reference = C304;
+ValeurCmp = 0.1uF;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4D46A6C0/4D45A4E2;
+Reference = C401;
+ValeurCmp = 0.1uF;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4D46A6C0/4D45A2C0;
+Reference = C402;
+ValeurCmp = 0.22uF;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4D46A6C0/4D45A1C9;
+Reference = C403;
+ValeurCmp = 4.7uF;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4D21A705/4D970632;
+Reference = C501;
+ValeurCmp = 0.1uF;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4D21A705/4D970666;
+Reference = C502;
+ValeurCmp = 1uF;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4D970A7D;
+Reference = P101;
+ValeurCmp = CONN_8;
+IdModule  = CONN_8_100MIL_OVAL;
+EndCmp
+
+BeginCmp
+TimeStamp = /4D972654;
+Reference = R101;
+ValeurCmp = 2.2K;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4D972658;
+Reference = R102;
+ValeurCmp = 2.2K;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4D972637;
+Reference = SW101;
+ValeurCmp = SPST;
+IdModule  = SOLDER_JUMPER_NO_PASTE;
+EndCmp
+
+BeginCmp
+TimeStamp = /4D970D8E/4D971A4C;
+Reference = SW201;
+ValeurCmp = SOLDER_SWITCH;
+IdModule  = JUMP_2_SMALL_NO_PASTE;
+EndCmp
+
+BeginCmp
+TimeStamp = /4D9707AF/4D375108;
+Reference = SW301;
+ValeurCmp = SOLDER_SWITCH;
+IdModule  = JUMP_2_SMALL_NO_PASTE;
+EndCmp
+
+BeginCmp
+TimeStamp = /4D970D8E/4DA8C322;
+Reference = U201;
+ValeurCmp = MS5611-01BA01;
+IdModule  = MS5611-01BA01;
+EndCmp
+
+BeginCmp
+TimeStamp = /4D9707AF/4D37370E;
+Reference = U301;
+ValeurCmp = MPU60X0;
+IdModule  = MPU60X0;
+EndCmp
+
+BeginCmp
+TimeStamp = /4D46A6C0/4D45A154;
+Reference = U401;
+ValeurCmp = HMC5883;
+IdModule  = HMC5883L;
+EndCmp
+
+BeginCmp
+TimeStamp = /4D21A705/4D9705D8;
+Reference = U501;
+ValeurCmp = MIC5203;
+IdModule  = SOT23-5;
+EndCmp
+
+EndListe

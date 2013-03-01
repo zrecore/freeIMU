@@ -1,0 +1,41 @@
+eeschema (2010-12-23 BZR 2683)-testing  >> Creation date: Fri 24 Dec 2010 03:50:07 PM CET
+
+#Cmp ( order = Reference )
+| ACC1       ADXL345     
+| C1         0.1uF       
+| C2         0.1uF       
+| C3         0.1uF       
+| C4         10nF        
+| C5         2.2nF       
+| C6         0.1uF       
+| C7         0.22uF      
+| C8         4.7uF       
+| C9         0.1uF       
+| C10        10nF        
+| J1         JUMP_2      
+| J2         JUMP_2      
+| P1         CONN_6      
+| U1         ITG3200     
+| U2         HMC5843     
+#End Cmp
+
+#Cmp ( order = Value )
+| 0.1uF        C1        
+| 0.1uF        C2        
+| 0.1uF        C3        
+| 0.1uF        C6        
+| 0.1uF        C9        
+| 0.22uF       C7        
+| 10nF         C4        
+| 10nF         C10       
+| 2.2nF        C5        
+| 4.7uF        C8        
+| ADXL345      ACC1      
+| CONN_6       P1        
+| HMC5843      U2        
+| ITG3200      U1        
+| JUMP_2       J1        
+| JUMP_2       J2        
+#End Cmp
+
+#End List

@@ -1,0 +1,290 @@
+# EESchema Netlist Version 1.1 created  Fri 30 Sep 2011 02:21:59 PM CEST
+(
+ ( /4D972658 $noname  R102 2.2K {Lib=R}
+  (    1 N-000010 )
+  (    2 /MPU6050/SCL )
+ )
+ ( /4D972654 $noname  R101 2.2K {Lib=R}
+  (    1 N-000010 )
+  (    2 /MS5611-01BA03/SDA )
+ )
+ ( /4D972637 $noname  SW101 SPST {Lib=SPST}
+  (    1 +3.3V )
+  (    2 N-000010 )
+ )
+ ( /4D970A7D $noname  P101 CONN_8 {Lib=CONN_8}
+  (    1 +BATT )
+  (    2 GND )
+  (    3 +3.3V )
+  (    4 /MS5611-01BA03/SDA )
+  (    5 /MPU6050/SCL )
+  (    6 /MPU6050/INTA )
+  (    7 /MPU6050/FSYNC )
+  (    8 /HMC5883L/DRDY )
+ )
+ ( /4D970D8E/4DA8C322 $noname  U201 MS5611-01BA01 {Lib=MS5611-01BA01}
+  (    1 +3.3V )
+  (    2 +3.3V )
+  (    3 GND )
+  (    4 /MS5611-01BA03/CSB )
+  (    5 /MS5611-01BA03/CSB )
+  (    6 ? )
+  (    7 /MS5611-01BA03/SDA )
+  (    8 /MPU6050/SCL )
+ )
+ ( /4D970D8E/4D971B66 $noname  C201 0.1uF {Lib=C}
+  (    1 +3.3V )
+  (    2 GND )
+ )
+ ( /4D970D8E/4D971A4C $noname  SW201 SOLDER_SWITCH {Lib=SOLDER_SWITCH}
+  (    1 /MS5611-01BA03/CSB )
+  (    2 GND )
+  (    3 +3.3V )
+ )
+ ( /4D9707AF/4D375108 $noname  SW301 SOLDER_SWITCH {Lib=SOLDER_SWITCH}
+  (    1 N-000022 )
+  (    2 GND )
+  (    3 +3.3V )
+ )
+ ( /4D9707AF/4D374544 $noname  C301 10nF {Lib=C}
+  (    1 +3.3V )
+  (    2 GND )
+ )
+ ( /4D9707AF/4D37435E $noname  C304 0.1uF {Lib=C}
+  (    1 +3.3V )
+  (    2 GND )
+ )
+ ( /4D9707AF/4D374246 $noname  C302 0.1uF {Lib=C}
+  (    1 N-000024 )
+  (    2 GND )
+ )
+ ( /4D9707AF/4D373888 $noname  C303 10nF {Lib=C}
+  (    1 GND )
+  (    2 N-000025 )
+ )
+ ( /4D9707AF/4D37370E $noname  U301 MPU60X0 {Lib=MPU60X0}
+  (    1 GND )
+  (    6 /HMC5883L/SDA )
+  (    7 /HMC5883L/SCL )
+  (    8 +3.3V )
+  (    9 N-000022 )
+  (   10 N-000024 )
+  (   11 /MPU6050/FSYNC )
+  (   12 /MPU6050/INTA )
+  (   13 +3.3V )
+  (   18 GND )
+  (   19 ? )
+  (   20 N-000025 )
+  (   21 ? )
+  (   22 ? )
+  (   23 /MPU6050/SCL )
+  (   24 /MS5611-01BA03/SDA )
+ )
+ ( /4D46A6C0/4D45A4E2 $noname  C401 0.1uF {Lib=C}
+  (    1 +3.3V )
+  (    2 GND )
+ )
+ ( /4D46A6C0/4D45A2C0 $noname  C402 0.22uF {Lib=C}
+  (    1 /HMC5883L/SETC )
+  (    2 /HMC5883L/SETP )
+ )
+ ( /4D46A6C0/4D45A1C9 $noname  C403 4.7uF {Lib=C}
+  (    1 N-000013 )
+  (    2 GND )
+ )
+ ( /4D46A6C0/4D45A154 $noname  U401 HMC5883 {Lib=HMC5883}
+  (    1 /HMC5883L/SCL )
+  (    2 +3.3V )
+  (    3 ? )
+  (    4 +3.3V )
+  (    5 ? )
+  (    6 ? )
+  (    7 ? )
+  (    8 /HMC5883L/SETP )
+  (    9 GND )
+  (   10 N-000013 )
+  (   11 GND )
+  (   12 /HMC5883L/SETC )
+  (   13 +3.3V )
+  (   14 ? )
+  (   15 /HMC5883L/DRDY )
+  (   16 /HMC5883L/SDA )
+ )
+ ( /4D21A705/4D970666 $noname  C502 1uF {Lib=C}
+  (    1 +3.3V )
+  (    2 GND )
+ )
+ ( /4D21A705/4D970632 $noname  C501 0.1uF {Lib=C}
+  (    1 +BATT )
+  (    2 GND )
+ )
+ ( /4D21A705/4D9705D8 $noname  U501 MIC5203 {Lib=MIC5203}
+  (    1 +BATT )
+  (    2 GND )
+  (    3 +BATT )
+  (    4 ? )
+  (    5 +3.3V )
+ )
+)
+*
+{ Allowed footprints by component:
+$component R102
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R101
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component C201
+ SM*
+ C?
+ C1-1
+$endlist
+$component C301
+ SM*
+ C?
+ C1-1
+$endlist
+$component C304
+ SM*
+ C?
+ C1-1
+$endlist
+$component C302
+ SM*
+ C?
+ C1-1
+$endlist
+$component C303
+ SM*
+ C?
+ C1-1
+$endlist
+$component C401
+ SM*
+ C?
+ C1-1
+$endlist
+$component C402
+ SM*
+ C?
+ C1-1
+$endlist
+$component C403
+ SM*
+ C?
+ C1-1
+$endlist
+$component C502
+ SM*
+ C?
+ C1-1
+$endlist
+$component C501
+ SM*
+ C?
+ C1-1
+$endlist
+$endfootprintlist
+}
+{ Pin List by Nets
+Net 1 "/MS5611-01BA03/SDA" "SDA"
+ P101 4
+ U301 24
+ R101 2
+ U201 7
+Net 2 "/MPU6050/SCL" "SCL"
+ P101 5
+ U201 8
+ U301 23
+ R102 2
+Net 3 "/MPU6050/INTA" "INTA"
+ U301 12
+ P101 6
+Net 4 "/HMC5883L/SDA" "SDA"
+ U401 16
+ U301 6
+Net 5 "/MPU6050/FSYNC" "FSYNC"
+ P101 7
+ U301 11
+Net 6 "/HMC5883L/DRDY" "DRDY"
+ U401 15
+ P101 8
+Net 7 "/HMC5883L/SCL" "SCL"
+ U301 7
+ U401 1
+Net 8 "+3.3V" "+3.3V"
+ C401 1
+ C502 1
+ U501 5
+ U401 13
+ SW101 1
+ SW301 3
+ U301 8
+ C301 1
+ SW201 3
+ C201 1
+ U301 13
+ U401 2
+ U401 4
+ C304 1
+ U201 2
+ U201 1
+ P101 3
+Net 9 "+BATT" "+BATT"
+ U501 3
+ C501 1
+ P101 1
+ U501 1
+Net 10 "" ""
+ R102 1
+ R101 1
+ SW101 2
+Net 12 "/HMC5883L/SETP" "SETP"
+ U401 8
+ C402 2
+Net 13 "" ""
+ C403 1
+ U401 10
+Net 16 "/HMC5883L/SETC" "SETC"
+ C402 1
+ U401 12
+Net 22 "" ""
+ SW301 1
+ U301 9
+Net 24 "" ""
+ U301 10
+ C302 1
+Net 25 "" ""
+ C303 2
+ U301 20
+Net 27 "GND" "GND"
+ P101 2
+ U301 1
+ SW201 2
+ C201 2
+ U201 3
+ U501 2
+ C301 2
+ C304 2
+ C302 2
+ C401 2
+ C303 1
+ C501 2
+ C502 2
+ U401 11
+ U401 9
+ SW301 2
+ C403 2
+ U301 18
+Net 28 "/MS5611-01BA03/CSB" "CSB"
+ U201 4
+ SW201 1
+ U201 5
+}
+#End
