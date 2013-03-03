@@ -7,11 +7,13 @@ Desktop="Desktop"
 
 [Globals]
 AutoSaveProject=1
+UsedLibrary="/home/aalbino/eagle-6.4.0/lbr/frames.lbr"
+UsedLibrary="freeimu-components.lbr"
 
 [Win_1]
 Type="Control Panel"
 Loc="1943 245 2542 644"
-State=1
+State=2
 Number=0
 
 [Desktop]
