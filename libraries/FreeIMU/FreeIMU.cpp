@@ -213,47 +213,6 @@ void FreeIMU::init(int accgyro_addr, bool fastmode) {
   // load calibration from eeprom
   calLoad();
   #endif
-  getQ_simple(NULL);
-}
-
-void FreeIMU::getQ_simple(float* q)
-{
-#if HAS_HMC5883L()
-  float values[9];
-  getValues(values);
-  
-  //calculate pitch & roll from accelerometer readings
-  float pitch = atan2(values[0], sqrt(values[1]*values[1]+values[2]*values[2]));
-  float roll = -atan2(values[1], sqrt(values[0]*values[0]+values[2]*values[2]));
-  
-  //orientate magnetometer readings to get yaw
-  float xh = values[6]*cos(pitch)+values[7]*sin(roll)*sin(pitch)-values[8]*cos(roll)*sin(pitch);
-  float yh = values[7]*cos(roll)+values[8]*sin(roll);
-  float yaw = atan2(yh, xh);
-  
-  //convert into quaternion
-  float rollOver2 = roll * 0.5f;
-  float sinRollOver2 = (float)sin(rollOver2);
-  float cosRollOver2 = (float)cos(rollOver2);
-  float pitchOver2 = pitch * 0.5f;
-  float sinPitchOver2 = (float)sin(pitchOver2);
-  float cosPitchOver2 = (float)cos(pitchOver2);
-  float yawOver2 = yaw * 0.5f;
-  float sinYawOver2 = (float)sin(yawOver2);
-  float cosYawOver2 = (float)cos(yawOver2);
-
-  q0 = cosYawOver2 * sinPitchOver2 * cosRollOver2 + sinYawOver2 * cosPitchOver2 * sinRollOver2;
-  q1 = sinYawOver2 * cosPitchOver2 * cosRollOver2 - cosYawOver2 * sinPitchOver2 * sinRollOver2;
-  q2 = - cosYawOver2 * cosPitchOver2 * cosRollOver2 - sinYawOver2 * sinPitchOver2 * sinRollOver2;
-  q3 = cosYawOver2 * cosPitchOver2 * sinRollOver2 - sinYawOver2 * sinPitchOver2 * cosRollOver2;
-  
-  if (q!=NULL){
-	  q[0] = q0;
-	  q[1] = q1;
-	  q[2] = q2;
-	  q[3] = q3;
-  }
-#endif
 }
 
 #ifndef CALIBRATION_H
