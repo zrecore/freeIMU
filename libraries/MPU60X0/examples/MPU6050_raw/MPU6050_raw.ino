@@ -61,6 +61,7 @@ void setup() {
     Serial.begin(38400);
 
     // initialize device
+    delay(100);  // MPU6050 may not be ready on boards that boot up quickly
     Serial.println("Initializing I2C devices...");
     accelgyro.initialize();
 
