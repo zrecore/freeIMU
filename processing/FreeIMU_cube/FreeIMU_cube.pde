@@ -28,7 +28,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
 import processing.serial.*;
-import processing.opengl.*;
+
+// This is the Processing 1.x way of importing opengl 
+//import processing.opengl.*;
+
+// Processing 2.x already has opengl as part of the core...so you don't need anything else.
+
 
 Serial myPort;  // Create object from Serial class
 
@@ -262,4 +267,3 @@ float [] quatConjugate(float [] quat) {
   
   return conj;
 }
-
