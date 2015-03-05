@@ -180,6 +180,7 @@ class FreeIMU
     void getRawValues(int * raw_values);
     void getValues(float * values);
     void getQ(float * q);
+    void getQ_simple(float* q);
     void getEuler(float * angles);
     void getYawPitchRoll(float * ypr);
     void getEulerRad(float * angles);
